@@ -34,5 +34,11 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.0.0
       with:
+        name: Build
         path: ${{github.workspace}}/build/Release
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.0.0
+      with:
+        name: Bin
+        path: ${{github.workspace}}/bin/Release
       
